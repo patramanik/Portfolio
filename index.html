@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- icon  add this web side:https://fontawesome.com/kits/b3535d9e54/setup -->
+  <script src="https://kit.fontawesome.com/b3535d9e54.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Backgroumd image -->
+  <div id="header" style="background-image: url(/assets/images/pp.png);">
+    <div class="container">
+      <nav>
+        <img src="assets/images/logo.svg" class="logo">
+
+        <!-- Nev bar -->
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!------Closeing icons ------>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!------Menu icons----->
+      </nav>
+      <div class="header-text">
+        <!-- <p>UI/UX Designer</p> -->
+        <h1>Hi, I'm <span>Manik Patra</span> </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- about me -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="assets/images/user.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I am a collaborative and creative full-stack developer, experienced in PHP and MySQL. I develop scalable and
+            efficient applications that meet or exceed client expectations. Also Passionate about mobile app development
+            and continuously improving my skills, I am a proficient mobile app developer capable of creating complex
+            applications for various industries. Expertise in frameworks such as Flutter, Laravel etc. enables me to
+            tackle any challenge with precision.
+          </p>
+
+          <!-- about title -->
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">
+              Education
+            </p>
+          </div>
+
+          <!-- About me informasion work -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br />Designing Web/App interfaces.</li>
+              <li><span>Web Development</span><br />Full Stack Developer.</li>
+              <li>
+                <span>App Development</span><br />Building Android/ios apps.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>2023-2024</span><br />Biology Learner App
+              </li>
+              <li>
+                <span>2020-2021</span><br />eSchool-project
+              </li>
+              <li>
+                <span>2020-2021</span><br />Grocery App
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <!-- <li>
+                <span>2016</span><br />Secondary From WBBSE.
+              </li>
+              <li><span>2018</span><br />Higher Secondary From WBCHSE.</li> -->
+              <li><span>2021</span><br />Bsc (Computer Science) From Midnapore Autonoumous College.</li>
+              <li><span>2024</span><br />MCA From Haldia Institute of Technology.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-----------Services----------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i> <!--icons add  -->
+          <h2>Web Development</h2>
+          <p>
+            Hello, i am a web developer. I have been working as a web developer for quite some time now. I believe I am a very ambitious person who loves to work on making the website work well. Working on the web is my passion as I love to work on exciting projects.</p>
+          <a href='#'>Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop"></i> <!--icons add  -->
+          <h2>UL/UX Design</h2>
+          <p>
+            aims to create a positive user experience that encourages customers to stick with a brand or product.
+            While a UX Designer decides how the user interface works, the UI designer decides how the user interface
+            looks.</p>
+          <a href='#'>Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i> <!-- icons add -->
+          <h2>App Development</h2>
+          <p>
+            the look and feel of a mobile application. This includes all of the visual elements and interactive
+            elements that impact how the app functions. Mobile app design combines two concepts</p>
+          <a href='#'>Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------------Portfolio----------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+
+      <div class="work-list">
+        <div class="work">
+          <img src="assets/images/work-1.png">
+
+          <div class="layer">
+            <h3>Grocery App</h3>
+            <p>The app connects you yo the talented people around the world.
+              </p>
+            <!-- link photo symbol -->
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+
+        <div class="work">
+          <img src="assets/images/work-2.png">
+          <div class="layer">
+            <h3>eSchool-project</h3>
+            <p>The app connects you yo the talented people around the world.
+              </p>
+            <!-- link photo symbol -->
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+
+        <div class="work">
+          <img src="assets/images/work-3.png">
+          <div class="layer">
+            <h3>Biology Learner App</h3>
+            <p>The app connects you yo the talented people around the world.
+              Download it from play store.</p>
+            <!-- link photo symbol -->
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- new button -->
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!---------------------Contact--------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>patramanik409@gmail.com</p>
+          <p><i class="fa-sharp fa-solid fa-square-phone"></i>+91 8918327205</p>
+
+          <!---------------------Social icons--------------->
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></i></a>
+            <a href="https://github.com/patramanik"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/manik-patra-158429199"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+
+          <!-- CV -->
+          <a href="assets/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message...."></textarea>
+            <button type="Submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Manik Patra.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- skills,experience & education click show particular data -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <!-- icons click funsion menu -->
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
