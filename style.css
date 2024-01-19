@@ -14,13 +14,20 @@ body{
     color: #fff;
 }
     /* Background image */
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/pp.png);
-    background-size: cover;
-    background-position: center;
-}
+    /* #header {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/pp.png);
+        background-size: cover;
+        background-position: center;
+    } */
+    
+    /* @media only screen and (max-width: 600px) {
+        #header {
+            background-size: contain; /* or adjust as needed */
+            /* background-position: center center;
+        }
+    } */ 
 /* Nev Bar */
 .container{
     padding: 10px 3%;
@@ -72,7 +79,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
 }
 
@@ -280,7 +287,7 @@ nav ul li a:hover::after{
 /* new button */
 .btn{
     display: block;
-    margin: 50px auto;
+    margin: 50px auto !important;
     width: fit-content;
     border: 1px solid #ff004f;
     padding: 14px 50px;
@@ -309,8 +316,9 @@ nav ul li a:hover::after{
     font-size: 25px;
 }
 .social-icons{
-    margin-top: 30px;
+    margin-top: 20px;
 }
+
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
@@ -360,15 +368,79 @@ form .btn2{
 }
 
 /*-------------------------CSS for Small Screen-------------------*/
+@media only screen and (max-width: 600px) {
+    /* Add responsive styles for navigation */
+    nav ul {
+        width: 100%;
+        padding-top: 80px; /* Adjust the padding as needed */
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.5s;
+    }
+
+    nav ul.show {
+        right: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+        text-align: center;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Add responsive styles for other elements */
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
 
 /*--------display hide computer screen Icons closeing and menu ------*/
 nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/Untitled\ design\ \(4\).png);
-    }
+   
     .header-text{
         margin-top: 100%;
         font-size: 16px;
